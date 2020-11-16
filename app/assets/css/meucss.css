@@ -1,0 +1,23 @@
+body {
+    background-image: url(../img/CINZAA.jpg);
+}
+
+.fim {
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+.navega {
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+.botao2 {
+    border-style: double;
+    border-radius: 15px;
+    margin-left: 10px;
+    background-color: rgba(6, 60, 161, 0.205);
+    padding: 9px;
+}
+
+.luiz {
+    background-color: rgba(0, 0, 0, 0.548);
+}
