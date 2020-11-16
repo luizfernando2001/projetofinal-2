@@ -5,7 +5,20 @@ $pg='cpanel';
 if(isset($_GET['pg'])){
 $pg = $_GET['pg'];
 }
+if (isset($_SESSION['usuario'])){
 
+switch ($pg) {
+    case 'cpanel':
+        # code...
+        break;
+    
+    default:
+        # code...
+        break;
+}
+}else{
+    
+}
 
 
 
