@@ -23,6 +23,16 @@ if (isset($_SESSION['usuario'])) {
             header('Refresh:0');
             break;
 
+        case 'contato':
+            include_once "app/site/paginas/contato.php";
+
+            break;
+
+        case 'produtos':
+            include_once "app/site/paginas/produtos.php";
+
+            break;
+
         default:
             include_once "app/painelAdm/paginas/includes/header.php";
             include_once "app/painelAdm/paginas/includes/navegacao.php";
