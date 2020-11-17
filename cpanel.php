@@ -1,4 +1,6 @@
 <?php
+include_once "app/painelAdm/helpers/helperAdm.php";
+
 session_start();
 //definindo a variavel pg
 $pg='cpanel';
@@ -9,15 +11,25 @@ if (isset($_SESSION['usuario'])){
 
 switch ($pg) {
     case 'cpanel':
-        # code...
+       include_once "app/painelAdm/index.php";
         break;
-    
+    case 'sair';
+break;
     default:
-        # code...
+    include_once "app/painelAdm/index.php";
         break;
 }
-}else{
+} else {
+    //verifica se foi submetido metodo post
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+       
+       if (verificaSeLogado()) {
+          include_once "app/painelAdm/index.php";
+       }
+    }else { include_once "app/painelAdm/paginas/login.php";
     
+    }
+
 }
 
 
