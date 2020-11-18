@@ -1,6 +1,6 @@
 <?php 
 function verificaSeLogado(){
-$usuario = 'senac';
+$usuario = 'luiz';
 $senha = '123456';
 
 if($_POST['usuario'] == $usuario){
