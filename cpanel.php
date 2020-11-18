@@ -17,22 +17,27 @@ if (isset($_SESSION['usuario'])) {
             include_once "app/painelAdm/paginas/includes/footer.php";
             break;
 
+            case 'produtos':
+                include_once "app/painelAdm/paginas/includes/header.php";
+                include_once "app/painelAdm/paginas/includes/navegacao.php";
+                include_once "app/painelAdm/paginas/produtos.php";
+                include_once "app/painelAdm/paginas/includes/footer.php";
+                break;
+    
+            case 'contato':
+                include_once "app/painelAdm/paginas/includes/header.php";
+                include_once "app/painelAdm/paginas/includes/navegacao.php";
+                include_once "app/painelAdm/paginas/contato.php";
+                include_once "app/painelAdm/paginas/includes/footer.php";
+                break;
+    
+
+
         case 'sair';
             session_destroy();
             header('location' . $_SERVER['PHP_SELF']);
             header('Refresh:0');
             break;
-
-        case 'contato':
-            include_once "app/site/paginas/contato.php";
-
-            break;
-
-        case 'produtos':
-            include_once "app/site/paginas/produtos.php";
-
-            break;
-
         default:
             include_once "app/painelAdm/paginas/includes/header.php";
             include_once "app/painelAdm/paginas/includes/navegacao.php";
