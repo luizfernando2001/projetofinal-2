@@ -151,7 +151,7 @@
           <img src="app/painelAdm/dist/img/avatar5.png" class="img-circle elevation-1" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">senac</a>
+          <a href="#" class="d-block">luiz</a>
           <a href="#" class="d-block">123456</a>
         </div>
       </div>
