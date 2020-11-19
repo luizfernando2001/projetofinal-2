@@ -1,76 +1,250 @@
- <!-- Content Wrapper. Contains page content -->
- <div class="content-wrapper">
+
+
+
+
+
+     <!-- Content Wrapper. Contains page content -->
+     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
-        <div class="content-header">
+        <section class="content-header">
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                      
-                        <h1 class="m-0"></h1>
-                    </div><!-- /.col -->
+                        <h1>Contato</h1>
+                    </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard v1</li>
+                            <li class="breadcrumb-item active">Tabela de dados</li>
                         </ol>
-                    </div><!-- /.col -->
-                </div><!-- /.row -->
+                    </div>
+                </div>
             </div><!-- /.container-fluid -->
-        </div>
-        <!-- /.content-header -->
-        <div class="container text-primary">
-<h1>Contato</h1>
-</div>
-<div class="container">
-    <div class="col-6 offset-3 mb-3">
-<form action="" method="POST" >
+        </section>
 
-  <div class="form-group text-light">
-  <li class="breadcrumb-item active">Nome</li>
-    <input type="text" name="nome" class="form-control" id="inputAddress" placeholder="Digite seu nome">
-  </div>
-  <div class="form-group text-light">
-  <li class="breadcrumb-item active">Assunto</li>
-      <input type="text"  name="text" class="form-control" id="text" placeholder="Digite o assunto">
-    </div>
-    <div class="form-group text-light">
-    <li class="breadcrumb-item active">Mensagem</li>
-    <textarea class="form-control" name="mensagem" id="exampleFormControlTextarea1"  placeholder="Digite sua mensagem" rows="5"></textarea>
-  </div>
-  <div class="text-center">
-  <div class="row">
-  <div class="col"><a href="index.php?pg=inicial" class="btn btn-success btn-block">Cancelar</a></div>
-  <div class="col"> <button type="submit" class="btn btn-primary btn-block">Enviar</button>  </div>
-  
-
-
-
-
-   </div>                
-  </div>
-</form>
-
-</div>
-</div>
-<br>
         <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
-                <!-- Small boxes (Stat box) -->
                 <div class="row">
-
-
+                    <div class="col">
+                      
+                      
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Tabela de dados com recursos padrão</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <table id="example1" class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                        <th>ID</th>
+                                            <th>Nome</th>
+                                            <th>Assunto</th>
+                                            <th>Mensagem</th>
+                                            <th>Oque deseja fazer</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Trident</td>
+                                            <td>Internet
+                                                Explorer 4.0
+                                            </td>
+                                            <td>Win 95+</td>
+                                            <td> 4</td>
+                                            <td class="text-center">
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Trident</td>
+                                            <td>Internet
+                                                Explorer 5.0
+                                            </td>
+                                            <td>Win 95+</td>
+                                            <td>5</td>
+                                            <td class="text-center">
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Trident</td>
+                                            <td>Internet
+                                                Explorer 5.5
+                                            </td>
+                                            <td>Win 95+</td>
+                                            <td>5.5</td>
+                                            <td class="text-center">
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Trident</td>
+                                            <td>Internet
+                                                Explorer 6
+                                            </td>
+                                            <td>Win 98+</td>
+                                            <td>6</td>
+                                            <td class="text-center"> 
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Trident</td>
+                                            <td>Internet Explorer 7</td>
+                                            <td>Win XP SP2+</td>
+                                            <td>7</td>
+                                            <td class="text-center">
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Trident</td>
+                                            <td>AOL browser (AOL desktop)</td>
+                                            <td>Win XP</td>
+                                            <td>6</td>
+                                            <td class="text-center">
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gecko</td>
+                                            <td>Firefox 1.0</td>
+                                            <td>Win 98+ / OSX.2+</td>
+                                            <td>1.7</td>
+                                            <td class="text-center">
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gecko</td>
+                                            <td>Firefox 1.5</td>
+                                            <td>Win 98+ / OSX.2+</td>
+                                            <td>1.8</td>
+                                            <td class="text-center"> 
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gecko</td>
+                                            <td>Firefox 2.0</td>
+                                            <td>Win 98+ / OSX.2+</td>
+                                            <td>1.8</td>
+                                            <td class="text-center">
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gecko</td>
+                                            <td>Firefox 3.0</td>
+                                            <td>Win 2k+ / OSX.3+</td>
+                                            <td>1.9</td>
+                                            <td class="text-center">
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gecko</td>
+                                            <td>Camino 1.0</td>
+                                            <td>OSX.2+</td>
+                                            <td>1.8</td>
+                                            <td class="text-center">
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gecko</td>
+                                            <td>Camino 1.5</td>
+                                            <td>OSX.3+</td>
+                                            <td>1.8</td>
+                                            <td class="text-center"> 
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gecko</td>
+                                            <td>Netscape 7.2</td>
+                                            <td>Win 95+ / Mac OS 8.6-9.2</td>
+                                            <td>1.7</td>
+                                            <td class="text-center"> 
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button></td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <td>Misc</td>
+                                            <td>IE Mobile</td>
+                                            <td>Windows Mobile 6</td>
+                                            <td>-</td>
+                                            <td class="text-center">
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Misc</td>
+                                            <td>PSP browser</td>
+                                            <td>PSP</td>
+                                            <td>-</td>
+                                            <td class="text-center">
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Other browsers</td>
+                                            <td>All others</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td class="text-center">
+                                            <button type="button" class="btn btn-success icon-eye"> </button>
+                                            <button type="button" class="btn btn-warning icon-pencil"></button>
+                                            <button type="button" class="btn btn-danger icon-box"></button></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nome</th>
+                                            <th>Assunto</th>
+                                            <th>Mensagem</th>
+                                            <th>Oque deseja fazer</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col -->
                 </div>
-
+                <!-- /.row -->
             </div>
-            <!-- /.row -->
-            <!-- Main row -->
+            <!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
 
-    </div><!-- /.container-fluid -->
+
     </section>
     <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-
-
-

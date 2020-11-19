@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="app/paineladm/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- JQVMap -->
   <link rel="stylesheet" href="app/paineladm/plugins/jqvmap/jqvmap.min.css">
-
+  <link rel="stylesheet" href="app/assets/icomoon/icomoon.css.css">
   <!-- DataTables -->
   <link rel="stylesheet" href="app/paineladm/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="app/paineladm/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
