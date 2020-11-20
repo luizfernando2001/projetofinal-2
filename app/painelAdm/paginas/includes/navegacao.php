@@ -123,7 +123,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link btn" href="cpanel.php?pg=sair">
-          <i class="nav-icon far fa-square text-info"></i>
+          <i class="nav-icon icon-exit text-info"></i>
         </a>
       </li>
       <li class="nav-item">
@@ -174,31 +174,25 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item">
                         <a href="?pg=usuarios" class="nav-link">
-                            <i class="far fa-user nav-icon"></i>
+                            <i class="icon-users nav-icon"></i>
                             <p>Usuarios</p>
                         </a>
                     </li>
-          
-         
-         
-         <li class="nav-item">
-
-
-         
+                   <li class="nav-item">
                         <a href="?pg=inicial" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
+                            <i class=" icon-home nav-icon"></i>
                             <p>Inicial</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="?pg=produtos" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
+                            <i class="icon-inbox-full nav-icon"></i>
                             <p>Produtos</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="?pg=contato" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
+                            <i class="icon-phone1 nav-icon"></i>
                             <p>Contato</p>
                         </a>
                     </li>
