@@ -6,10 +6,10 @@ function verificaSeLogado()
   $usuario = $_POST['usuario'];
   $resultConexao = new Conexao();
 $parametros= array(
-  ';usuario'=>$usuario
+  ':usuario'=>$usuario
 );  
-  $resultadoConsulta = $resultConexao->consultarBanco('SELECT * FROM usuarios WHERE nome = ;usuario', $parametros);
-if (count($resultadoConsulta) > 1 ) {
+  $resultadoConsulta = $resultConexao->consultarBanco('SELECT * FROM usuarios WHERE nome = :usuario', $parametros);
+if (count($resultadoConsulta) > 0) {
   //adiciona sessao
    $_SESSION['usuario']=$usuario;
   return true;
