@@ -56,7 +56,13 @@ case 'usuarios':
                     include_once "app/painelAdm/paginas/includes/footer.php";
                     break;
 
-
+                    case 'usuarios-novos':
+                        include_once "app/painelAdm/paginas/includes/header.php";
+                        include_once "app/painelAdm/paginas/includes/navegacao.php";
+                        inserirusuario();
+                        include_once "app/painelAdm/paginas/usuarios-novos.php";
+                        include_once "app/painelAdm/paginas/includes/footer.php";
+                        break;
 
 
         default:

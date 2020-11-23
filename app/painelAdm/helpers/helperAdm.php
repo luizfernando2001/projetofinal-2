@@ -26,3 +26,14 @@ if (count($resultadoConsulta) > 0) {
 // }
 
 }
+
+function inserirusuario(){
+  $nome = $_POST['name'];
+  $senha = $_POST['senha'];
+
+ $parametros = array(
+':nome' => $nome,
+':senha' => $senha,
+ );
+ 
+}
