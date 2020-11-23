@@ -40,7 +40,16 @@ if (isset($_SESSION['usuario'])) {
             header('Refresh:0');
             break;
 //======================================CRUD==========================================
-  case 'usuarios':
+case 'usuarios-form':
+    include_once "app/painelAdm/paginas/includes/header.php";
+    include_once "app/painelAdm/paginas/includes/navegacao.php";
+    include_once "app/painelAdm/paginas/usuarios-form.php";
+    include_once "app/painelAdm/paginas/includes/footer.php";
+    break;
+
+
+
+case 'usuarios':
                     include_once "app/painelAdm/paginas/includes/header.php";
                     include_once "app/painelAdm/paginas/includes/navegacao.php";
                     include_once "app/painelAdm/paginas/usuarios-listar.php";

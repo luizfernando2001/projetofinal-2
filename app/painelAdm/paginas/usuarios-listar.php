@@ -35,7 +35,7 @@ $dados = $resultDados->consultarBanco('SELECT * FROM usuarios');
                       
                         <div class="card">
                             <div class="card-header">
-                            <a class="btn btn-outline-success icon-user-plus" href="#" role="button"> Novo Usuario</a>
+                            <a class="btn btn-outline-success icon-user-plus" href="?pg=usuarios-form" role="button"> Novo Usuario</a>
                               
                             </div>
                             <!-- /.card-header -->
@@ -44,10 +44,10 @@ $dados = $resultDados->consultarBanco('SELECT * FROM usuarios');
                                     <thead>
                                         <tr>
                                         <th>ID</th>
-                                            <th>Nome</th>
-                                            <th>Assunto</th>
-                                            <th>Mensagem</th>
-                                            <th>Oque deseja fazer</th>
+                                            <th>usuario</th>
+                                            <th>Data Criaçao</th>
+                                            <th>Data Atualizaçao</th>
+                                            <th>Açoes</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -62,9 +62,9 @@ $dados = $resultDados->consultarBanco('SELECT * FROM usuarios');
                                         <td><?php echo $dadosusuario['dataCriacao'] ?></td>
                                         <td><?php echo $dadosusuario['dataAtualizacao'] ?></td>
                                             <td class="text-center">
-                                            <a class="btn btn-outline-success icon-eye" href="#" role="button"></a>
-                                            <a class="btn btn-outline-warning icon-pencil" href="#" role="button"></a>
-                                            <a class="btn btn-outline-danger icon-box" href="#" role="button"></a>
+                                            <a class="btn btn-outline-success icon-eye" href="?pg=visualizar&id<?php echo $dadosusuario['id_usuarios']?>" role="button"></a>
+                                            <a class="btn btn-outline-warning icon-pencil" href="?pg=editar&id<?php echo $dadosusuario['id_usuarios']?>" role="button"></a>
+                                            <a class="btn btn-outline-danger icon-box" href="?pg=eapagar&id<?php echo $dadosusuario['id_usuarios']?>" role="button"></a>
                                             </td>
                                         </tr>
                                         <?php
