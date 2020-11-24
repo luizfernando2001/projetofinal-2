@@ -173,45 +173,45 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-                        <a href="?pg=usuarios" class="nav-link">
-                            <i class="icon-users nav-icon"></i>
-                            <p>Usuarios</p>
-                        </a>
-                    </li>
-                   <li class="nav-item">
-                        <a href="?pg=inicial" class="nav-link">
-                            <i class=" icon-home nav-icon"></i>
-                            <p>Inicial</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="?pg=produtos" class="nav-link">
-                            <i class="icon-inbox-full nav-icon"></i>
-                            <p>Produtos</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="?pg=contato" class="nav-link">
-                            <i class="icon-phone1 nav-icon"></i>
-                            <p>Contato</p>
-                        </a>
-                    </li>
-                   
-         
-        
-         
-         
-          
-          
-         
-      
-        
-         
-         
-          
-          
-         
-          
+            <a href="?pg=usuarios" class="nav-link">
+              <i class="icon-users nav-icon"></i>
+              <p>Usuarios</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="?pg=inicial" class="nav-link">
+              <i class=" icon-home nav-icon"></i>
+              <p>Inicial</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="?pg=produtos" class="nav-link">
+              <i class="icon-inbox-full nav-icon"></i>
+              <p>Produtos</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="?pg=contato" class="nav-link">
+              <i class="icon-phone1 nav-icon"></i>
+              <p>Contato</p>
+            </a>
+          </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

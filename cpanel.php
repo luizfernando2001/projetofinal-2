@@ -17,21 +17,21 @@ if (isset($_SESSION['usuario'])) {
             include_once "app/painelAdm/paginas/includes/footer.php";
             break;
 
-            case 'produtos':
-                include_once "app/painelAdm/paginas/includes/header.php";
-                include_once "app/painelAdm/paginas/includes/navegacao.php";
-                include_once "app/painelAdm/paginas/produtos.php";
-                include_once "app/painelAdm/paginas/includes/footer.php";
-                break;
-    
-            case 'contato':
-                include_once "app/painelAdm/paginas/includes/header.php";
-                include_once "app/painelAdm/paginas/includes/navegacao.php";
-                include_once "app/painelAdm/paginas/contato.php";
-                include_once "app/painelAdm/paginas/includes/footer.php";
-                break;
+        case 'produtos':
+            include_once "app/painelAdm/paginas/includes/header.php";
+            include_once "app/painelAdm/paginas/includes/navegacao.php";
+            include_once "app/painelAdm/paginas/produtos.php";
+            include_once "app/painelAdm/paginas/includes/footer.php";
+            break;
 
-              
+        case 'contato':
+            include_once "app/painelAdm/paginas/includes/header.php";
+            include_once "app/painelAdm/paginas/includes/navegacao.php";
+            include_once "app/painelAdm/paginas/contato.php";
+            include_once "app/painelAdm/paginas/includes/footer.php";
+            break;
+
+
 
 
         case 'sair';
@@ -39,31 +39,64 @@ if (isset($_SESSION['usuario'])) {
             header('location' . $_SERVER['PHP_SELF']);
             header('Refresh:0');
             break;
-//======================================CRUD==========================================
-case 'usuarios-form':
-    include_once "app/painelAdm/paginas/includes/header.php";
-    include_once "app/painelAdm/paginas/includes/navegacao.php";
-    include_once "app/painelAdm/paginas/usuarios-form.php";
-    include_once "app/painelAdm/paginas/includes/footer.php";
-    break;
+            //======================================CRUD==========================================
+        case 'usuarios-form':
+            include_once "app/painelAdm/paginas/includes/header.php";
+            include_once "app/painelAdm/paginas/includes/navegacao.php";
+            include_once "app/painelAdm/paginas/usuarios-form.php";
+            include_once "app/painelAdm/paginas/includes/footer.php";
+            break;
 
 
 
-case 'usuarios':
+        case 'usuarios':
+            include_once "app/painelAdm/paginas/includes/header.php";
+            include_once "app/painelAdm/paginas/includes/navegacao.php";
+            include_once "app/painelAdm/paginas/usuarios-listar.php";
+            include_once "app/painelAdm/paginas/includes/footer.php";
+            break;
+
+        case 'usuarios-novos':
+            include_once "app/painelAdm/paginas/includes/header.php";
+            include_once "app/painelAdm/paginas/includes/navegacao.php";
+            inserirusuario();
+            include_once "app/painelAdm/paginas/usuarios-novos.php";
+            include_once "app/painelAdm/paginas/includes/footer.php";
+            break;
+
+        case 'apagar':
+            $parametros = array(
+                ':id_usuarios' => $_GET['id']
+            );
+            $apagarusuario = new conexao();
+            $apagarusuario -> intervencaonobanco('DELETE FROM usuarios WHERE id_usuarios = id_usuarios', $parametros);
+            header('Location: ?pg=usuarios');
+            break;
+
+            case 'usuarios-visualizar':
+                include_once "app/painelAdm/paginas/includes/header.php";
+                include_once "app/painelAdm/paginas/includes/navegacao.php";
+                include_once "app/painelAdm/paginas/usuarios-visualizar.php";
+                include_once "app/painelAdm/paginas/includes/footer.php";
+                break;
+
+                case 'usuarios-aditar':
                     include_once "app/painelAdm/paginas/includes/header.php";
                     include_once "app/painelAdm/paginas/includes/navegacao.php";
-                    include_once "app/painelAdm/paginas/usuarios-listar.php";
+                    if ($_REQUEST['REQUEST_METHOD']=='POST') {
+                        atualizarusuario();
+                    }else{
+$idusuarioeditar = isset($_GET['id']);
+if () {
+    # code...
+}
+                    }
+
+                    include_once "app/painelAdm/paginas/usuarios-editar.php";
+
                     include_once "app/painelAdm/paginas/includes/footer.php";
                     break;
-
-                    case 'usuarios-novos':
-                        include_once "app/painelAdm/paginas/includes/header.php";
-                        include_once "app/painelAdm/paginas/includes/navegacao.php";
-                        inserirusuario();
-                        include_once "app/painelAdm/paginas/usuarios-novos.php";
-                        include_once "app/painelAdm/paginas/includes/footer.php";
-                        break;
-
+    
 
         default:
             include_once "app/painelAdm/paginas/includes/header.php";
