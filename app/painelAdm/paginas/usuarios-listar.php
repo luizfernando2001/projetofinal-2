@@ -63,7 +63,7 @@ $dados = $resultDados->consultarBanco('SELECT * FROM usuarios');
                                             <td><?php echo $dadosusuario['dataAtualizacao'] ?></td>
                                             <td class="text-center">
                                                 <a class="btn btn-outline-success icon-eye" href="?pg=usuarios-visualizar&id=<?php echo $dadosusuario['id_usuarios'] ?>" role="button"></a>
-                                                <a class="btn btn-outline-warning icon-pencil" href="?pg=usuarios-aditar&id=<?php echo $dadosusuario['id_usuarios'] ?>" role="button"></a>
+                                                <a class="btn btn-outline-warning icon-pencil" href="?pg=usuarios-editar&id=<?php echo $dadosusuario['id_usuarios'] ?>" role="button"></a>
                                                 <a class="btn btn-outline-danger icon-box" href="?pg=apagar&id=<?php echo $dadosusuario['id_usuarios'] ?>" role="button"></a>
                                             </td>
                                         </tr>
