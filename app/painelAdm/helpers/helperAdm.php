@@ -52,16 +52,16 @@ function inserirusuario()
 //----------------------------------------------------------------------------------------------------------------------------
 function atualizarusuario()
 {
-  $idusuario = trim($_POST['id']);
+  $idusuario = trim($_POST['id_usuario']);
   $senha = trim($_POST['senha']);
   //validando as variaveis
   $parametros = array(
-    ':id_usuarios' => $idusuario,
+    ':id_usuario' => $idusuario,
     ':senha' =>  password_hash($senha, PASSWORD_DEFAULT)
   );
   //atualizar no banco
   $atualizausuario = new conexao();
-  $atualizausuario->intervencaonobanco('UPDATE usuarios SET senha = :senha WHERE id_usuarios = :id_usuarios', $parametros);
+  $atualizausuario->intervencaonobanco('UPDATE usuarios SET senha = :senha WHERE id_usuarios = :id_usuario', $parametros);
   include_once "app/painelAdm/paginas/usuarios-listar.php";
 }
 //------------------------------------------------------------------------------------------------------------------------------

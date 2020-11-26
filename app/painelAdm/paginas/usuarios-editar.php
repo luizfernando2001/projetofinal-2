@@ -33,7 +33,7 @@
                                  <label for="exampleFormControlInput1">senha</label>
                                  <input type="password" autofocus name="senha" class="form-control" id="senha" placeholder="Digite sua senha">
                              </div>
-                             <input type="hidden" name="id_usuario" value="8" <?php echo $dados['id_usuarios'] ?>>
+                             <input type="hidden" name="id_usuario" value="<?php echo $dados['id_usuarios'] ?>" >
                              <div class="form-group text-center">
                                  <a href="?pg=usuarios" class="btn btn-outline-danger">Voltar</a>
                                  <input class="btn btn-outline-success" type="submit" value="Atualizar">

@@ -72,7 +72,18 @@ if (isset($_SESSION['usuario'])) {
             $apagarusuario->intervencaonobanco('DELETE FROM usuarios WHERE id_usuarios = :id_usuarios', $parametros);
             header('Location: ?pg=usuarios');
             break;
+            
             //-------------------------------------------------------------------------------------------------------------------------------
+            case 'apagarmsg':
+                $parametros = array(
+                    ':id_contato' => $_GET['id']
+                );
+                $apagarcontato = new conexao();
+                $apagarcontato->intervencaonobanco('DELETE FROM contato WHERE id_contato = :id_contato', $parametros);
+                header('Location: ?pg=contato');
+                break;
+                //-------------------------------------------------------------------------------------------------------------------------------
+
         case 'usuarios-visualizar':
             include_once "app/painelAdm/paginas/includes/header.php";
             include_once "app/painelAdm/paginas/includes/navegacao.php";
