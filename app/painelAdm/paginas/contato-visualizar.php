@@ -9,7 +9,7 @@ if ($id) {
     $resultusuario = new conexao();
     $dados = $resultusuario->consultarbanco('SELECT * FROM contato WHERE id_contato = :id_contato', $parametros);
 } else {
-    header("Location: ?pg=usuarios-listar");
+    header("Location: ?pg=contato");
 }
 ?>
 
@@ -37,26 +37,13 @@ if ($id) {
                     <?php foreach ($dados as $dadosusuario) { ?>
 
 
-                        <form action="?pg=usuarios-novos" method="POST">
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Nome do usuario</label>
-                                <input type="text" disabled name="nome" class="form-control" id="usuario" value=" <?php echo $dadosusuario['nome'] ?>">
-                              
 
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Data Criaçao</label>
-
-                                <input type="text" disabled name="nome" class="form-control" id="dataCriacao" value=" <?php echo $dadosusuario['dataCriacao'] ?>">
-
-                            </div>
-                            <div class=" form-group text-center">
-                                <a href="?pg=usuarios" class="btn btn-outline-danger">Voltar</a>
-
-                            </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Nome do usuario</label>
+                            <input type="text" disabled name="nome" class="form-control" id="contato" value=" <?php echo $dadosusuario['nome'] ?>">
 
 
-                        </form>
+                        </div>
                     <?php } ?>
 
                     <!-- /.card -->

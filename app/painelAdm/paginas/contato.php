@@ -59,7 +59,7 @@ $dados = $resultDados->consultarBanco('SELECT * FROM contato');
                                         <td><?php echo $dadosusuario['email'] ?></td>
                                         <td><?php echo $dadosusuario['cat'] ?></td>
                                         <td class="text-center">
-                                            <a class="btn btn-outline-success icon-eye" href="?pg=usuarios-visualizar&id=<?php echo $dadosusuario['id_usuarios'] ?>" role="button"></a>
+                                            <a class="btn btn-outline-success icon-eye" href="?pg=contato-visualizar&id=<?php echo $dadosusuario['id_contato'] ?>" role="button"></a>
                                             
                                             <a class="btn btn-outline-danger icon-box" href="?pg=apagarmsg&id=<?php echo $dadosusuario['id_contato'] ?>" role="button"></a>
                                         </td>
