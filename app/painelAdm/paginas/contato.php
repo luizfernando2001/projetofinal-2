@@ -40,10 +40,11 @@ $dados = $resultDados->consultarBanco('SELECT * FROM contato');
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table id="example1" class="table table-bordered table-striped">
+                            <table id="example1" class="table table-bordered table-striped Classified">
                                 <thead>
                                     <tr>
-                                        <th>ID</th>
+                                        <th > 
+                                        ID</th>
                                         <th>nome</th>
                                         <th>email</th>
                                         <th>categorias</th>
@@ -58,8 +59,14 @@ $dados = $resultDados->consultarBanco('SELECT * FROM contato');
                                         <td><?php echo $dadosusuario['nome'] ?></td>
                                         <td><?php echo $dadosusuario['email'] ?></td>
                                         <td><?php echo $dadosusuario['cat'] ?></td>
+                                    
                                         <td class="text-center">
-                                            <a class="btn btn-outline-success icon-eye" href="?pg=contato-visualizar&id=<?php echo $dadosusuario['id_contato'] ?>" role="button"></a>
+                                            <a class="btn btn-outline-primary <?php  
+                                        if ($dadosusuario['visualizar'] == 1) {
+                                            echo "btn btn-outline-dark";
+                                        }
+                                        
+                                        ?> icon-eye" href="?pg=contato-visualizar&id=<?php echo $dadosusuario['id_contato'] ?>" role="button"></a>
                                             
                                             <a class="btn btn-outline-danger icon-box" href="?pg=apagarmsg&id=<?php echo $dadosusuario['id_contato'] ?>" role="button"></a>
                                         </td>

@@ -1,46 +1,39 @@
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">painel</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">painel v1</li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    </div>
-
-    <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
-        <div class="row">
-         
-          <!-- ./col -->
-          
-          <!-- ./col -->
-        </div>
-        <!-- /.row -->
-        <!-- Main row -->
-        <div class="row">
-          <!-- Left col -->
-         
-          <!-- /.Left col -->
-          <!-- right col (We are only adding the ID to make the widgets sortable)-->
-          
-          <!-- right col -->
-        </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
+<hr>
+<div class="row">
+<div class="col-4">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="app\assets\img\bmw3.gif" alt="Imagem de capa do card">
+  <div class="card-body">
+    <h5 class="card-title">Título do card</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+    <a href="#" class="btn btn-primary">Visitar</a>
   </div>
-  <!-- /.content-wrapper -->
-  
+</div>
+</div>
+
+<div class="class col-4">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="app\assets\img\bmw1.jpg" alt="Imagem de capa do card">
+  <div class="card-body">
+    <h5 class="card-title">BMW Z4 2009</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+    <a href="#" class="btn btn-primary">Visitar</a>
+  </div>
+</div>
+</div>
+
+<div class="col-4"> 
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="app\assets\img\bmw2.gif" alt="Imagem de capa do card">
+  <div class="card-body">
+    <h5 class="card-title">Título do card</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+    <a href="#" class="btn btn-primary">Visitar</a>
+  </div>
+</div>
+</div>
+
+
+
+</div>
+<hr>

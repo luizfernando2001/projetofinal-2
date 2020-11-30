@@ -31,7 +31,12 @@ if (isset($_SESSION['usuario'])) {
             include_once "app/painelAdm/paginas/includes/footer.php";
             break;
 
-
+            case 'contato-visualizar':
+                include_once "app/painelAdm/paginas/includes/header.php";
+                include_once "app/painelAdm/paginas/includes/navegacao.php";
+                include_once "app/painelAdm/paginas/contato-visualizar.php";
+                include_once "app/painelAdm/paginas/includes/footer.php";
+                break;
 
 
         case 'sair';
@@ -106,21 +111,22 @@ if (isset($_SESSION['usuario'])) {
                 }
             }
             include_once "app/painelAdm/paginas/includes/footer.php";
-            break;
-            //-------------------------------------------------------------------------------------------------------------------------------
+        break;
+        //-------------------------------------------------------------------------------------------------------------------------------
         default:
-            include_once "app/painelAdm/paginas/includes/header.php";
-            include_once "app/painelAdm/paginas/includes/navegacao.php";
-            include_once "app/painelAdm/paginas/inicial.php";
-            include_once "app/painelAdm/paginas/includes/footer.php";
-
-
-            break;
-    }
+        include_once "app/painelAdm/paginas/includes/header.php";
+        include_once "app/painelAdm/paginas/includes/navegacao.php";
+        include_once "app/painelAdm/paginas/inicial.php";
+        include_once "app/painelAdm/paginas/includes/footer.php";
+        
+        
+    break;
+}
 } else {
+    $erro;
     //verifica se foi submetido metodo post
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
+        
         if (verificaSeLogado()) {
             include_once "app/painelAdm/paginas/includes/header.php";
             include_once "app/painelAdm/paginas/includes/navegacao.php";
@@ -133,15 +139,15 @@ if (isset($_SESSION['usuario'])) {
 }
 
 
-            
 
 
-     
+
+
 
 
 // if (!isset($_SESSION['usuario'])){
-//     $usuario = 'luizluiz';
-//     $senha = 'luiz@site.com';
+    //     $usuario = 'luizluiz';
+    //     $senha = 'luiz@site.com';
 //     $projeto = 'projeto final';
 
 //     session_start();

@@ -50,6 +50,8 @@ if ($id) {
                                 <input type="text" disabled name="nome" class="form-control" id="dataCriacao" value=" <?php echo $dadosusuario['dataCriacao'] ?>">
 
                             </div>
+
+                            
                             <div class=" form-group text-center">
                                 <a href="?pg=usuarios" class="btn btn-outline-danger">Voltar</a>
 

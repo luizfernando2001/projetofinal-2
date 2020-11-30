@@ -23,7 +23,7 @@
                 <div class="row">
                     <div class=col-1></div>
                  <div class="col-10">
-                <form action="?pg=usuarios-novos" method="POST" >
+                <form action="?pg=usuarios-novos" method="POST" enctype="multipart/form-data" >
   <div class="form-group">
     <label for="exampleFormControlInput1">Nome do usuario</label>
     <input type="text" name="nome" class="form-control" id="usuario" placeholder="Digite seu email">
@@ -31,6 +31,10 @@
   <div class="form-group">
     <label for="exampleFormControlInput1">senha</label>
     <input type="password" name="senha" class="form-control" id="senha" placeholder="Digite sua senha">
+  </div>
+  <div class="form-group">
+   
+    <input type="file" name="img_usuario" class="" id="senha" placeholder="">
   </div>
   <div class="form-group text-center">
       <a href="?pg=usuarios" class="btn btn-outline-danger">Voltar</a>

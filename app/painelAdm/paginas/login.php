@@ -14,7 +14,10 @@
     <link rel="stylesheet" href="app/painelAdm/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="app/painelAdm/dist/css/adminlte.min.css">
+
     <link rel="stylesheet" href="app/assets/css/meucss.css">
+
+    <link rel="stylesheet" href="app/assets/js/meujs.js">
 </head>
 
 <body class="hold-transition login-page">
@@ -26,10 +29,16 @@
         <div class="card">
             <div class="card-body login-card-body">
                 <p class="login-box-msg">Logar para iniciar </p>
+                <?php 
+                if (isset($erro)) { ?>
+                   <div class="alert alert-danger" id="erro"> <?php echo $erro; ?> </div>
+              <?php  } ?> 
+                
+                
 
                 <form action="cpanel.php?pg=cpanel" method="post">
                     <div class="input-group mb-3">
-                        <input type="text" name="usuario" class="form-control" placeholder="Email">
+                        <input type="text" name="usuario" class="form-control" autofocus placeholder="Email">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
@@ -81,11 +90,13 @@
     <!-- /.login-box -->
 
     <!-- jQuery -->
-    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <script src="app/painelAdm/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
-    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="app/painelAdm/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="../../dist/js/adminlte.min.js"></script>
+    <script src="app/painelAdm/dist/js/adminlte.min.js"></script>
+
+    <script src="app/assets/js/meujs.js"></script>
 </body>
 
 </html>
